@@ -1,6 +1,6 @@
 import React from "react"
 import { Navbar } from "@components"
-import Searchbar from "@components/navigation/_searchbar"
+import Searchbar from "@components/navbar/_searchbar"
 import { withPadding } from "@customDecorators"
 import { submenuDocsData } from "@data"
 
