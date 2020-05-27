@@ -1,10 +1,14 @@
 import PropTypes from "prop-types"
+import Head from "next/head"
 import React from "react"
 import { Navbar, Sidebar, PageIndex } from "@components"
 
-export const DefaultLayout = ({ children, submenu }) => {
+export const DefaultLayout = ({ children, submenu, metadata }) => {
   return (
     <>
+      <Head>
+        <title>{metadata.title}</title>
+      </Head>
       <Navbar submenu={submenu} />
       <div className="flex container">
         <Sidebar className="hidden lg:block lg:w-1/5" submenu={submenu} />
