@@ -10,7 +10,9 @@
           "@components": "./components",
           "@styles": "./styles",
           "@elements": "./elements",
-          "@hooks": "./hooks"
+          "@hooks": "./hooks",
+          "@partials": "./_partials",
+          "@customDecorators": "./.storybook/custom-decorators"
         }
       }
     ]
