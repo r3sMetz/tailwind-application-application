@@ -12,7 +12,8 @@
           "@elements": "./elements",
           "@hooks": "./hooks",
           "@partials": "./_partials",
-          "@customDecorators": "./.storybook/custom-decorators"
+          "@customDecorators": "./.storybook/custom-decorators",
+          "@data": "./data"
         }
       }
     ]

@@ -1,0 +1,28 @@
+.sidebar {
+  @apply relative;
+}
+
+.sidebar:before,
+.sidebar:after {
+  @apply absolute;
+  @apply inset-x-0;
+  @apply w-full;
+  @apply h-16;
+}
+
+.sidebar:before {
+  @apply top-0;
+  content: "";
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.sidebar:after {
+  @apply bottom-0;
+  content: "";
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 1) rgba(255, 255, 255, 0)
+  );
+}
