@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "storybook": "IS_STORYBOOK=true start-storybook -p 6006",
+    "build-storybook": "IS_STORYBOOK=true build-storybook"
   },
   "dependencies": {
     "next": "9.4.2",
@@ -15,6 +17,16 @@
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.10.0",
+    "@storybook/addon-a11y": "^5.3.19",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-backgrounds": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
+    "@storybook/addon-viewport": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0"
   }
 }
