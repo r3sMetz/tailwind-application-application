@@ -1,7 +1,8 @@
-export const Logo = () => (
+import PropTypes from "prop-types"
+export const Logo = ({ className }) => (
   <>
     <svg
-      className="h-12 w-auto hidden md:block"
+      className={`hidden md:block ${className}`}
       viewBox="0 0 273 64"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -54,3 +55,11 @@ export const Logo = () => (
     </svg>
   </>
 )
+
+Logo.propTypes = {
+  className: PropTypes.string,
+}
+
+Logo.defaultProps = {
+  className: "h-12 w-auto",
+}

@@ -1,12 +1,13 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-const Searchbar = ({ className }) => {
+const Searchbar = ({ className, emphasized }) => {
+  const appearenceClasses = emphasized ? "bg-white shadow-lg" : "bg-gray-300"
   return (
     <form className={`inline-block ${className}`}>
       <input
         type="text"
-        className="w-full inline-block shadow-lg rounded-lg px-4 py-3"
+        className={`w-full inline-block rounded-lg px-4 py-3 ${appearenceClasses}`}
         value=""
         placeholder={`Serach the docs (Press "/" to focus)`}
       />
@@ -16,6 +17,7 @@ const Searchbar = ({ className }) => {
 
 Searchbar.propTypes = {
   className: PropTypes.string,
+  emphasized: PropTypes.bool,
 }
 
 export default Searchbar

@@ -10,6 +10,9 @@ export default {
 }
 
 export const Base = () => <Navigation submenu={submenuDocsData} />
+export const Emphasized = () => (
+  <Navigation submenu={submenuDocsData} emphasized />
+)
 export const Search = () => <Searchbar className="bg-white min-w-full" />
 
 Search.story = {
