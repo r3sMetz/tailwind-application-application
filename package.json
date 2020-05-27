@@ -12,9 +12,10 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.4",
     "@next/mdx": "^9.4.2",
+    "highlight.js": "^10.0.3",
     "next": "9.4.2",
     "postcss-preset-env": "^6.7.0",
-    "react": "16.13.1",
+    "react": "^16.13.1",
     "react-dom": "16.13.1",
     "tailwindcss": "^1.4.6"
   },
@@ -23,12 +24,14 @@
     "@storybook/addon-a11y": "^5.3.19",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-backgrounds": "^5.3.19",
+    "@storybook/addon-docs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addon-storysource": "^5.3.19",
     "@storybook/addon-viewport": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
-    "babel-plugin-module-resolver": "^4.0.0"
+    "babel-plugin-module-resolver": "^4.0.0",
+    "react-is": "^16.13.1"
   }
 }

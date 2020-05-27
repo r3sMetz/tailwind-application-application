@@ -2,5 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@import "../node_modules/highlight.js/styles/darcula.css";
 @import "../components/sidebar/sidebar.css";
 @import "../components/page-index.css";
