@@ -1,6 +1,6 @@
 import { Meta, Story, Preview } from "@storybook/addon-docs/blocks"
 import { CodeSample } from "@components"
-import { SLOTMARKER } from "@elements"
+import { Slot } from "@elements"
 import DummyCode from "../dummy-data/dummy-code.mdx"
 import { DummyJSXExample } from "../dummy-data/dummy-jsx"
 
@@ -11,10 +11,12 @@ import { DummyJSXExample } from "../dummy-data/dummy-jsx"
 <Preview>
   <Story name="base">
     <CodeSample>
-      <SLOTMARKER slot="jsx" />
-      <DummyJSXExample />
-      <SLOTMARKER slot="code" />
-      <DummyCode />
+      <Slot slot="jsx">
+        <DummyJSXExample />
+      </Slot>
+      <Slot slot="code">
+        <DummyCode />
+      </Slot>
     </CodeSample>
   </Story>
 </Preview>
