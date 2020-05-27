@@ -9,7 +9,7 @@ export const SocialMedia = ({ className }) => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          href="https://github.com/tailwindcss/tailwindcss"
+          href="https://github.com/r3sMetz/tailwind-application-application"
         >
           <Icon name="github" className="w-5 h-auto" />
         </a>

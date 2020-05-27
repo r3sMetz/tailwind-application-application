@@ -83,10 +83,28 @@ const swatchIconUnits = {
   ),
 }
 
+const userIconUnits = {
+  width: 24,
+  height: 25,
+  description: (primaryClass, secondaryClass) => (
+    <>
+      <path
+        className={`${secondaryClass} fill-current`}
+        d="M21 20v-1a5 5 0 0 0-5-5H8a5 5 0 0 0-5 5v1c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2z"
+      />
+      <path
+        className={`${primaryClass} fill-current`}
+        d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10z"
+      />
+    </>
+  ),
+}
+
 export default {
   book: bookIconUnits,
   brick: brickIconUnits,
   chatgroup: chatgroupIconUnits,
   film: filmIconUnits,
   swatch: swatchIconUnits,
+  user: userIconUnits,
 }

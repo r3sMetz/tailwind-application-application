@@ -8,7 +8,7 @@ const Searchbar = ({ className, emphasized }) => {
       <input
         type="text"
         className={`w-full inline-block rounded-lg px-4 py-3 ${appearenceClasses}`}
-        placeholder={`Serach the docs (Press "/" to focus)`}
+        placeholder={`Serach the docs (Not ready yet)`}
       />
     </form>
   )

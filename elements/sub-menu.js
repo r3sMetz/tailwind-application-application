@@ -13,7 +13,7 @@ export const SubMenu = ({ menus }) => {
           <ul>
             {menu.items.map((item, itemKey) => (
               <li key={itemKey}>
-                <Link href={item.href}>
+                <Link href="#">
                   <a className="py-2 inline-block hover:text-gray-800">
                     {item.title}
                   </a>

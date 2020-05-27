@@ -1,4 +1,5 @@
 import PropTypes from "prop-types"
+import Link from "next/link"
 import React from "react"
 import { Logo } from "@elements"
 import MobileMenu from "./_mobile-menu"
@@ -13,7 +14,11 @@ export const Navbar = ({ submenu, emphasized }) => {
       className={`bg-white border-b-2 border-gray-200 sticky top-0 inset-x-0 z-40 text-gray-500 ${spacingClasses}`}
     >
       <div className="container flex items-center justify-between space-x-5 lg:space-x-20">
-        <Logo className={logoClasses} />
+        <Link href="/">
+          <a>
+            <Logo className={logoClasses} />
+          </a>
+        </Link>
         <Searchbar className="flex-1" emphasized={emphasized} />
         <MobileMenu className="lg:hidden" submenu={submenu} />
         <DesktopMenu className="hidden lg:flex" />
