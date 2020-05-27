@@ -2,8 +2,9 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Icon } from "@elements"
 import { useToggle } from "@hooks"
+import { MainMenu, VersionPicker, SubMenu } from "@elements"
 
-const MobileMenu = ({ className }) => {
+const MobileMenu = ({ className, submenu }) => {
   const [menuIsActive, __, toggleMenuIsActive] = useToggle()
   const iconName = menuIsActive ? "close" : "burger"
   return (
@@ -16,9 +17,11 @@ const MobileMenu = ({ className }) => {
         <Icon name={iconName} />
       </button>
       {menuIsActive && (
-        <nav className="absolute inset-x-0 bottom-0 transform translate-y-full bg-white">
-          Mobile Nav
-        </nav>
+        <div className="absolute p-6 max-h-screen overflow-y-scroll inset-x-0 bottom-0 transform translate-y-full bg-white space-y-6">
+          <VersionPicker />
+          <MainMenu />
+          <SubMenu menus={submenu} />
+        </div>
       )}
     </div>
   )
@@ -26,6 +29,7 @@ const MobileMenu = ({ className }) => {
 
 MobileMenu.propTypes = {
   className: PropTypes.string,
+  submenu: PropTypes.array.isRequired,
 }
 
 export default MobileMenu
