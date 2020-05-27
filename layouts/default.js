@@ -12,10 +12,11 @@ export const DefaultLayout = ({ children, submenu, metadata }) => {
       <Navbar submenu={submenu} />
       <div className="flex container">
         <Sidebar className="hidden lg:block lg:w-1/5" submenu={submenu} />
-        <main className="py-10 lg:pl-8 lg:flex items-start flex-1" id="main">
-          <div className="lg:flex-1 bg-red-400" style={{ height: "200vh" }}>
-            {children}
-          </div>
+        <main
+          className="py-10 lg:pl-8 items-start lg:w-4/5 lg:flex space-x-16"
+          id="main"
+        >
+          <div className="markdown">{children}</div>
           <PageIndex className="page-index hidden lg:block lg:w-1/4" />
         </main>
       </div>

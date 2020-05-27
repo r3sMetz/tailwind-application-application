@@ -1,0 +1,36 @@
+.markdown {
+  @apply text-gray-900;
+}
+
+.markdown > h1,
+.markdown > h2,
+.markdown > h3,
+.markdown > h4,
+.markdown > h5,
+.markdown > h6 {
+  @apply text-2xl;
+  @apply mb-2;
+}
+
+.markdown > *:not(h1, h2, h3, h4, h5, h6, hr) {
+  @apply mb-4;
+}
+
+.markdown > p {
+  @apply leading-relaxed;
+  @apply text-gray-600;
+}
+
+.markdown > hr {
+  @apply my-12;
+}
+
+.markdown > p > a {
+  @apply text-blue-500;
+  @apply underline;
+}
+
+.markdown > p > code {
+  @apply text-purple-500;
+  @apply bg-gray-200;
+}
