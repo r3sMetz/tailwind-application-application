@@ -1,18 +1,16 @@
 import React from "react"
-import { Navigation } from "@components"
+import { Navbar } from "@components"
 import Searchbar from "@components/navigation/_searchbar"
 import { withPadding } from "@customDecorators"
 import { submenuDocsData } from "@data"
 
 export default {
   title: "Components/Navigation",
-  component: Navigation,
+  component: Navbar,
 }
 
-export const Base = () => <Navigation submenu={submenuDocsData} />
-export const Emphasized = () => (
-  <Navigation submenu={submenuDocsData} emphasized />
-)
+export const Base = () => <Navbar submenu={submenuDocsData} />
+export const Emphasized = () => <Navbar submenu={submenuDocsData} emphasized />
 export const Search = () => <Searchbar className="bg-white min-w-full" />
 
 Search.story = {

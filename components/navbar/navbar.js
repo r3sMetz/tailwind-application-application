@@ -5,24 +5,24 @@ import MobileMenu from "./_mobile-menu"
 import DesktopMenu from "./_desktop-menu"
 import Searchbar from "./_searchbar"
 
-export const Navigation = ({ submenu, emphasized }) => {
+export const Navbar = ({ submenu, emphasized }) => {
   const spacingClasses = emphasized ? "p-6" : "px-6 py-3"
   const logoClasses = emphasized ? "h-12 w-auto" : "h-10 w-auto"
   return (
-    <div style={{ height: "200vh" }}>
-      <nav
-        className={`border-b-2 border-gray-200 sticky top-0 inset-x-0 z-40 flex items-center justify-between space-x-5 lg:space-x-20 text-gray-500 ${spacingClasses}`}
-      >
+    <div
+      className={`bg-white border-b-2 border-gray-200 sticky top-0 inset-x-0 z-40 text-gray-500 ${spacingClasses}`}
+    >
+      <div className="container flex items-center justify-between space-x-5 lg:space-x-20">
         <Logo className={logoClasses} />
         <Searchbar className="flex-1" emphasized={emphasized} />
         <MobileMenu className="lg:hidden" submenu={submenu} />
         <DesktopMenu className="hidden lg:flex" />
-      </nav>
+      </div>
     </div>
   )
 }
 
-Navigation.propTypes = {
+Navbar.propTypes = {
   submenu: PropTypes.array.isRequired,
   emphasized: PropTypes.bool,
 }

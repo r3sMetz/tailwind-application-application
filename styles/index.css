@@ -3,3 +3,4 @@
 @import "tailwindcss/utilities";
 
 @import "../components/sidebar/sidebar.css";
+@import "../components/page-index.css";

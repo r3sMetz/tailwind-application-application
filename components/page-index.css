@@ -1,0 +1,4 @@
+.page-index {
+  @apply sticky;
+  top: 114px;
+}
