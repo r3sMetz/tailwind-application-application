@@ -22,7 +22,7 @@
 }
 
 .markdown > hr {
-  @apply my-12;
+  @apply mt-20;
 }
 
 .markdown > p > a {
@@ -33,4 +33,18 @@
 .markdown > p > code {
   @apply text-purple-500;
   @apply bg-gray-200;
+}
+
+.anchor-only {
+  @apply m-0;
+  @apply -mb-6;
+  @apply sr-only;
+}
+
+.anchorjs::before {
+  content: "";
+  @apply h-24;
+  @apply block;
+  @apply -mt-6;
+  @apply invisible;
 }
