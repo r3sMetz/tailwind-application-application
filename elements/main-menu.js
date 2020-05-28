@@ -10,7 +10,7 @@ export const MainMenu = ({ className }) => {
       <li className="flex items-center space-x-2">
         <RUIcon name="user" />
         <Link href="/my-job-application">
-          <a className="py-2 inline-block hover:text-gray-800">
+          <a className="py-2 inline-block hover:text-gray-800 font-bold">
             My Job Application
           </a>
         </Link>
