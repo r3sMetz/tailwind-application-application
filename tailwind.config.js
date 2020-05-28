@@ -1,5 +1,10 @@
 module.exports = {
-  purge: [],
+  purge: [
+    "./components/**/*.js",
+    "./elements/**/*.js",
+    ".layouts/**/*.js",
+    "./pages/**/*.(js|mdx)",
+  ],
   theme: {
     container: {
       center: true,
